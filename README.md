@@ -2,7 +2,7 @@
 
 https://github.com/user-attachments/assets/3a7b2d94-856d-48e6-b452-dd98e391ee41
 
-A row of ten analog-needle VU meters for [cliamp](https://cliamp.stream), one per spectrum band. Needles are drawn at sub-pixel resolution with Unicode braille (U+2800 to U+28FF) so diagonals stay smooth at any swing angle. Sibling of [led-burst](https://github.com/AlexZeitler/cliamp-plugin-led-burst) and [block-burst](https://github.com/AlexZeitler/cliamp-plugin-block-burst).
+A row of ten analog-needle VU meters for [cliamp](https://cliamp.stream), one per spectrum band. Needles are drawn at sub-pixel resolution with Unicode braille (U+2800 to U+28FF) so diagonals stay smooth at any swing angle. Sibling of [led-burst](https://github.com/AlexZeitler/cliamp-plugin-led-burst), [block-burst](https://github.com/AlexZeitler/cliamp-plugin-block-burst), and [reverb](https://github.com/AlexZeitler/cliamp-plugin-reverb).
 
 ## Install
 
@@ -56,6 +56,7 @@ The visualization is symmetric (each meter sits next to the next) and not stereo
 
 - [AlexZeitler/cliamp-plugin-led-burst](https://github.com/AlexZeitler/cliamp-plugin-led-burst) - Stereo LED matrix that bursts outward from a center divider, with green / yellow / red tiers and peak hold.
 - [AlexZeitler/cliamp-plugin-block-burst](https://github.com/AlexZeitler/cliamp-plugin-block-burst) - Nested LED pyramid where each tier responds to a different frequency range.
+- [AlexZeitler/cliamp-plugin-reverb](https://github.com/AlexZeitler/cliamp-plugin-reverb) - Horizontal LED matrix inspired by vintage HiFi reverberation graphic displays, with quad-symmetric bars pulsing outward.
 
 ## License
 
