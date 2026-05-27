@@ -10,14 +10,17 @@ local p = plugin.register({
 
 local ESC = string.char(27)
 local RESET = ESC .. "[0m"
-local function fg(n) return ESC .. "[38;5;" .. n .. "m" end
+-- Use ANSI 16-color SGR codes (30-37 / 90-97) so the terminal theme
+-- (Omarchy, etc.) drives the actual RGB values. 256-color slots would
+-- be hardcoded and ignore the theme.
+local function sgr(n) return ESC .. "[" .. n .. "m" end
 
-local TICK_C     = fg(244)
-local TICK_HOT   = fg(196)
-local ZERO_C     = fg(220)
-local LABEL_C    = fg(244)
-local NEEDLE_C   = fg(231)
-local NEEDLE_HOT = fg(196)
+local TICK_C     = sgr(90)  -- bright black (grey)
+local TICK_HOT   = sgr(91)  -- bright red
+local ZERO_C     = sgr(93)  -- bright yellow
+local LABEL_C    = sgr(90)  -- bright black (grey)
+local NEEDLE_C   = sgr(97)  -- bright white
+local NEEDLE_HOT = sgr(91)  -- bright red
 
 local nMeters       = 10
 local NEEDLE_CELL_H = 3                   -- braille rows in the needle area
